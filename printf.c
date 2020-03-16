@@ -4,7 +4,7 @@
 
 /**
  * selection - Function that selects the correct function to print.
- * @format: Address to Struct.
+ * @format: Address to String.
  * @list1: A Valist.
  * @ops1: Address to an Structure.
  *
