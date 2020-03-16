@@ -9,7 +9,7 @@
 typedef struct funct
 {
 	char *opc;
-	int (*f)(va_list);
+	int (*f)();
 }functions;
 /* in this section, the prototypes of all the basic functions and the
  * functions of each printf format will go
@@ -18,4 +18,6 @@ int _printf(const char *format, ...);
 int _puts(char *str);
 int _putchar(char c);
 int _strlen(char *s);
+int p_char(va_list);
+int p_string(va_list);
 #endif

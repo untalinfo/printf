@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * _puts - funtion that prints a string, follow by a new line
