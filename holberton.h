@@ -20,4 +20,5 @@ int _putchar(char c);
 int _strlen(char *s);
 int p_char(va_list);
 int p_string(va_list);
+int p_int(va_list);
 #endif
