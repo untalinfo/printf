@@ -17,7 +17,7 @@ int selection(const char *format, va_list list1, functions *ops1)
 				while (format[i + 1] == ' ')
 				i++;
 			}
-			while(j < 4)
+			while(j < 5)
 			{
 				if(ops1[j].opc[0] == format[i + 1])
 				{
@@ -28,8 +28,8 @@ int selection(const char *format, va_list list1, functions *ops1)
 				}
 				j++;
 			}
-		//	if (j == 3)
-		//		count = count + _putchar('%');
+			if (j == 5)
+				count = count + _putchar('%');
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
