@@ -10,9 +10,9 @@ int selection(const char *format, va_list list1, functions *ops1)
 	{
 		if (format[i] == '%' && format[i + 1] == '\0')
 			return (-1);
-		if (format[i] == '%' && (format[i +1] == ' ' || format[i + 1] != '%'))
+		if (format[i] == '%' && (format[i + 1] == ' ' || format[i + 1] != '%'))
 		{
-			if (format[i +1] == ' ')
+			if (format[i + 1] == ' ')
 			{
 				while (format[i + 1] == ' ')
 				i++;
@@ -49,7 +49,7 @@ int selection(const char *format, va_list list1, functions *ops1)
 int _printf(const char *format, ...)
 {
 	va_list list;
-	int i;
+	int i = 0;
 	functions ops[] = {
 		{"c", p_char},
 		{"s", p_string},
