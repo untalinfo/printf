@@ -16,7 +16,7 @@ int _puts(char *str)
 		_putchar(str[l]);
 		l++;
 	}
-	return(l - 1);
+	return (l - 1);
 }
 
 /**
