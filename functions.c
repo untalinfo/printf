@@ -15,10 +15,11 @@ int p_string(va_list list)
 {
 	return(_puts(va_arg(list, char *)));
 }
-/*
-int p_int(va_list list)
+
+int p_integer(va_list list)
 {
-	int integer, div = 1;
+	int integer;
+	int div = 1;
 	int len_i = 0;
 	unsigned int num;
 
@@ -40,4 +41,4 @@ int p_int(va_list list)
 		div = div / 10;
 	}
 	return (len_i);	
-}*/
+}
