@@ -17,7 +17,7 @@ int main(void)
 	_printf("hola como estas\n");
 	_printf("h\n");
 //	_printf("%s");
-	_printf("%i\n", 324354);
+	_printf("%i\n", -324354);
 	_printf("%d\n", 1232435);
 	return (0);
 //	len = _printf("L\n");

@@ -1,6 +1,5 @@
 #include <stdarg.h>
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -23,7 +22,11 @@ int p_string(va_list list)
 {
 	return (_puts(va_arg(list, char *)));
 }
-
+/**
+ * p_integer - print a int
+ * @list: va_list
+ * Return: a int
+ */
 int p_integer(va_list list)
 {
 	int integer;
@@ -48,5 +51,5 @@ int p_integer(va_list list)
 		num = num % div;
 		div = div / 10;
 	}
-	return (len_i);	
+	return (len_i);
 }

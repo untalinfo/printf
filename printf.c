@@ -1,7 +1,6 @@
 #include <stdarg.h>
-#include <stdio.h>
 #include "holberton.h"
-
+#include <stdlib.h>
 /**
  * selection - Function that selects the correct function to print.
  * @format: Address to String.
@@ -26,11 +25,10 @@ int selection(const char *format, va_list list1, functions *ops1)
 				while (format[i + 1] == ' ')
 				i++;
 			}
-			while(j < 5)
+			while (j < 5)
 			{
 				if (ops1[j].opc[0] == format[i + 1])
 				{
-				//	printf("1\n");
 					count = count + ops1[j].f(list1);
 					i++;
 					break;
@@ -47,7 +45,6 @@ int selection(const char *format, va_list list1, functions *ops1)
 		}
 		else
 		{
-		//	printf("entro\n");
 			count = count + _putchar(format[i]);
 		}
 		i++;
