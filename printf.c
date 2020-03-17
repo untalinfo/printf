@@ -69,6 +69,7 @@ int _printf(const char *format, ...)
 		{"i", p_integer},
 		{"d", p_integer},
 		{"r", p_reverse},
+		{"R", p_rot13},
 	};
 	if (format == NULL)
 		return (-1);
