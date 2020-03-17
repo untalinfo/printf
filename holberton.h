@@ -10,10 +10,9 @@ typedef struct funct
 {
 	char *opc;
 	int (*f)();
-}functions;
-/* in this section, the prototypes of all the basic functions and the
- * functions of each printf format will go
- */
+} functions;
+
+
 int _printf(const char *format, ...);
 int _puts(char *str);
 int _putchar(char c);

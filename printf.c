@@ -2,6 +2,15 @@
 #include <stdio.h>
 #include "holberton.h"
 
+/**
+ * selection - Function that selects the correct function to print.
+ * @format: Address to String.
+ * @list1: A Valist.
+ * @ops1: Address to an Structure.
+ *
+ * Return: an int.
+ */
+
 int selection(const char *format, va_list list1, functions *ops1)
 {
 	int i = 0, j = 0, count = 0;
@@ -19,7 +28,7 @@ int selection(const char *format, va_list list1, functions *ops1)
 			}
 			while(j < 5)
 			{
-				if(ops1[j].opc[0] == format[i + 1])
+				if (ops1[j].opc[0] == format[i + 1])
 				{
 				//	printf("1\n");
 					count = count + ops1[j].f(list1);
@@ -46,6 +55,13 @@ int selection(const char *format, va_list list1, functions *ops1)
 	}
 	return (count);
 }
+
+/**
+ * _printf - Function that produces output according to a format.
+ * @format: Address to String.
+ * Return: An int.
+ */
+
 int _printf(const char *format, ...)
 {
 	va_list list;
@@ -62,5 +78,5 @@ int _printf(const char *format, ...)
 	va_start(list, format);
 	i = selection(format, list, ops);
 	va_end(list);
-	return(i);
+	return (i);
 }
