@@ -74,3 +74,31 @@ int p_reverse(va_list list)
 	}
 	return (lenr);
 }
+/**
+ * p_rot13 - functions that encodes a string using tor13
+ * @list: va_list
+ * Return: lenr 
+ */
+int p_rot13(va_list list)
+{
+	int len = 0;
+	int i, j;
+	char *s = va_arg(list, char *);
+
+	char alpha[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char replace[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for(j = 0; j <= 52; j++)
+		{
+			if (s[i] == alpha[j])
+			{
+				len = len + _putchar(replace[j]);
+				break;
+			}
+		}
+	}
+	return (len);
+}
+
