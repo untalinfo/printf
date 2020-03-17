@@ -35,7 +35,7 @@ int selection(const char *format, va_list list1, functions *ops1)
 				}
 				j++;
 			}
-			if (j == 7)
+			if (j == 6)
 				count = count + _putchar('%');
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
@@ -69,11 +69,13 @@ int _printf(const char *format, ...)
 		{"i", p_integer},
 		{"d", p_integer},
 		{"r", p_reverse},
+		{"R", p_rot13},
 	};
 	if (format == NULL)
 		return (-1);
 
 	va_start(list, format);
+
 	i = selection(format, list, ops);
 	va_end(list);
 	return (i);
