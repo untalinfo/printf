@@ -20,4 +20,5 @@ int _strlen(char *s);
 int p_char(va_list);
 int p_string(va_list);
 int p_integer(va_list);
+int p_reverse(va_list);
 #endif
