@@ -56,7 +56,7 @@ int p_integer(va_list list)
 /**
  * p_reverse - functions that prints a string in reverse
  * @list: va_list
- * Return: lenr 
+ * Return: lenr
  */
 int p_reverse(va_list list)
 {
@@ -77,7 +77,7 @@ int p_reverse(va_list list)
 /**
  * p_rot13 - functions that encodes a string using tor13
  * @list: va_list
- * Return: lenr 
+ * Return: lenr
  */
 int p_rot13(va_list list)
 {
@@ -90,7 +90,7 @@ int p_rot13(va_list list)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for(j = 0; j <= 52; j++)
+		for (j = 0; j <= 52; j++)
 		{
 			if (s[i] == alpha[j])
 			{
