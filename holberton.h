@@ -19,5 +19,5 @@ int _putchar(char c);
 int _strlen(char *s);
 int p_char(va_list);
 int p_string(va_list);
-
+int p_integer(va_list);
 #endif
