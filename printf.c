@@ -1,7 +1,6 @@
 #include <stdarg.h>
-#include <stdio.h>
 #include "holberton.h"
-
+#include <stdlib.h>
 /**
  * selection - Function that selects the correct function to print.
  * @format: Address to String.
