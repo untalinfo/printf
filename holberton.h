@@ -21,4 +21,5 @@ int p_char(va_list);
 int p_string(va_list);
 int p_integer(va_list);
 int p_reverse(va_list);
+int p_rot13(va_list);
 #endif
