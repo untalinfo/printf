@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * _puts - funtion that prints a string, follow by a new line
+ * _puts - Function that prints a string, follow by a new line.
  * @str: pointer of the string str
  * Return: 0
  */
