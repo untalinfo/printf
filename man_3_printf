@@ -31,7 +31,7 @@ Returns the number of characters printed (excluding the null byte used to end ou
 .br
 .BR " {"
 .br
-.BR " 	int number = 101;"
+.BR " 	int age = 25;"
 .br
 .BR "	_printf("Hello World"); "
 .br
@@ -39,17 +39,9 @@ Returns the number of characters printed (excluding the null byte used to end ou
 .br
 .BR "	_printf("your name is %s", char_pointer); "
 .br
-.BR "	_printf("you have %d years", int_var); "
+.BR "	_printf("I am %d years old", age); "
 .br
-.BR "	_printf("you have %i years", int_var); "
-.br
-.BR "	_printf("you have %u years", var); "
-.br
-.BR "	_printf("you have %o years", var); "
-.br
-.BR "	_printf("you have %x years", var); "
-.br
-.BR "	_printf("you hace %X years", var); "
+.BR "	_printf("you are %i years", int_var); "
 .br
 .BR " }"
 .br
