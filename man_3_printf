@@ -26,7 +26,6 @@ The function _printf() produce output according to a format as described below. 
 .TP
 %R
  rot13'ed string
-
 .SH Return value
 Returns the number of characters printed (excluding the null byte used to end output to strings)
 .SH Example
