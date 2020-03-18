@@ -4,19 +4,20 @@ This project is about recreating our printf function, which belongs to a standar
 ```
 <img align="center" src="https://i.ibb.co/8b7WG5d/printf.png" width="100%" />
 ```
-##How to use it 🔧
+## How to use it 🔧
+```
 Firts you have to add the holberton library. "holberton.h"
 
 This library contains all the prototypes functions that you will need to execute the _printf function
 
-###Prototype: int _printf(const char *format, ...);
+### Prototype: int _printf(const char *format, ...);
 
 Then compile just like that:
 gcc -Wall Wextra -Werror -pedantic -Wno-format *.c holberton.h -o namefileExecutable
 
 ./"namefileExecutable"
 ```
-##Test⚙️
+## Test⚙️
 Some examples of how to call the function _printf
 To print a nomal string:
 ```
@@ -36,7 +37,7 @@ This project has been tested on Ubuntu 14.06.6 LTS
 * The tests are carried out in [virtualBox](https://www.virtualbox.com) 
 * Development environment manager [vagrant](https://www.vagrantup.com)
 ```
-##Authors✒️
+## Authors✒️
 * Javier Charria - student at Holberton School
 * Oscar Info - student at Holberton School
 
