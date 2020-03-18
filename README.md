@@ -3,6 +3,7 @@
 This project is about recreating our printf function, which belongs to a standard C language library. Its main function is to send a standard output according to the format, fomatting the past arguments and turning them into the arguments os a charracter string. For this project, the main function will be used as _printf to diffrentiate it from the original printf.
 ```
 <img align="center" src="https://i.ibb.co/8b7WG5d/printf.png" width="100%"/>
+<img src="https://i.ibb.co/8b7WG5d/printf.png" alt="printf" border="0" />
 ```
 ## How to use it 🔧
 ```
