@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * p_char - print a char
- * @list: va_list
- * Return: a number char
+ * p_char - Function that prints a char.
+ * @list: va_list.
+ * Return: A number char.
  */
 int p_char(va_list list)
 {
