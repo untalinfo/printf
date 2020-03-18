@@ -7,15 +7,16 @@
  * @list: va_list.
  * Return: A number char.
  */
+
 int p_char(va_list list)
 {
 	return (_putchar(va_arg(list, int)));
 }
 
 /**
- * p_string - print a string.
- * @list: va_list
- * Return: a string
+ * p_string - Function that prints a string.
+ * @list: va_list.
+ * Return: a string.
  */
 
 int p_string(va_list list)
@@ -27,10 +28,10 @@ int p_string(va_list list)
 		lens = lens + _puts("(null)");
 	while (s[lens])
 		lens = lens + _putchar(s[lens]);
-
 	return (lens);
 	/*return (_puts(va_arg(list, char *)));*/
 }
+
 /**
  * p_integer - print a int
  * @list: va_list
