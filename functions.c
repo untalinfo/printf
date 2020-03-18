@@ -66,8 +66,8 @@ int p_integer(va_list list)
 
 /**
  * p_reverse - Function that prints a string in reverse.
- * @list: va_list
- * Return: lenr
+ * @list: va_list.
+ * Return: lenr.
  */
 
 int p_reverse(va_list list)
@@ -88,9 +88,9 @@ int p_reverse(va_list list)
 }
 
 /**
- * p_rot13 - functions that encodes a string using tor13
- * @list: va_list
- * Return: lenr
+ * p_rot13 - Functions that encodes a string using Rot13.
+ * @list: va_list.
+ * Return: lenr.
  */
 int p_rot13(va_list list)
 {
@@ -114,4 +114,3 @@ int p_rot13(va_list list)
 	}
 	return (len);
 }
-
