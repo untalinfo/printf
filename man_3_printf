@@ -33,9 +33,11 @@ Returns the number of characters printed (excluding the null byte used to end ou
 .br
 .BR " 	int age = 25;"
 .br
+.BR "	char letter = 'J';
+.br
 .BR "	_printf("Hello World"); "
 .br
-.BR "	_printf("My name beging for %c", char_var); "
+.BR "	_printf("My name beging with %c", letter); "
 .br
 .BR "	_printf("your name is %s", char_pointer); "
 .br
