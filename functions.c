@@ -33,10 +33,11 @@ int p_string(va_list list)
 }
 
 /**
- * p_integer - print a int
- * @list: va_list
- * Return: a int
+ * p_integer - Function that prints a integer.
+ * @list: va_list.
+ * Return: a int.
  */
+
 int p_integer(va_list list)
 {
 	int integer;
