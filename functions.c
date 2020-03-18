@@ -46,7 +46,6 @@ int p_integer(va_list list)
 	unsigned int num;
 
 	integer = va_arg(list, int);
-
 	if (integer < 0)
 	{
 		len_i = len_i + _putchar('-');
