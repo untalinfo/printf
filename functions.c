@@ -3,19 +3,20 @@
 #include <stdlib.h>
 
 /**
- * p_char - print a char
- * @list: va_list
- * Return: a number char
+ * p_char - Function that prints a char.
+ * @list: va_list.
+ * Return: A number char.
  */
+
 int p_char(va_list list)
 {
 	return (_putchar(va_arg(list, int)));
 }
 
 /**
- * p_string - print a string.
- * @list: va_list
- * Return: a string
+ * p_string - Function that prints a string.
+ * @list: va_list.
+ * Return: a string.
  */
 
 int p_string(va_list list)
@@ -27,15 +28,16 @@ int p_string(va_list list)
 		lens = lens + _puts("(null)");
 	while (s[lens])
 		lens = lens + _putchar(s[lens]);
-
 	return (lens);
 	/*return (_puts(va_arg(list, char *)));*/
 }
+
 /**
- * p_integer - print a int
- * @list: va_list
- * Return: a int
+ * p_integer - Function that prints a integer.
+ * @list: va_list.
+ * Return: a int.
  */
+
 int p_integer(va_list list)
 {
 	int integer;
@@ -44,7 +46,6 @@ int p_integer(va_list list)
 	unsigned int num;
 
 	integer = va_arg(list, int);
-
 	if (integer < 0)
 	{
 		len_i = len_i + _putchar('-');
@@ -62,11 +63,13 @@ int p_integer(va_list list)
 	}
 	return (len_i);
 }
+
 /**
- * p_reverse - functions that prints a string in reverse
- * @list: va_list
- * Return: lenr
+ * p_reverse - Function that prints a string in reverse.
+ * @list: va_list.
+ * Return: lenr.
  */
+
 int p_reverse(va_list list)
 {
 	int i = 0, lenr = 0;
@@ -83,10 +86,11 @@ int p_reverse(va_list list)
 	}
 	return (lenr);
 }
+
 /**
- * p_rot13 - functions that encodes a string using tor13
- * @list: va_list
- * Return: lenr
+ * p_rot13 - Functions that encodes a string using Rot13.
+ * @list: va_list.
+ * Return: lenr.
  */
 int p_rot13(va_list list)
 {
@@ -110,4 +114,3 @@ int p_rot13(va_list list)
 	}
 	return (len);
 }
-
