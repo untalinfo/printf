@@ -33,9 +33,9 @@ Returns the number of characters printed (excluding the null byte used to end ou
 .br
 .BR " 	int age = 25;"
 .br
-.BR "	char letter = 'J';
+.BR "	char letter = 'J';"
 .br
-.BR "	char *p = "OSCAR";
+.BR "	char *p = "OSCAR";"
 .br
 .BR "	_printf("Hello World"); "
 .br
