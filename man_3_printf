@@ -20,6 +20,13 @@ The function _printf() produce output according to a format as described below. 
 .TP
 %s
  string - prints (null) on null string
+.TP
+%r
+ reverse string
+.TP
+%R
+ rot13'ed string
+
 .SH Return value
 Returns the number of characters printed (excluding the null byte used to end output to strings)
 .SH Example
@@ -46,6 +53,10 @@ Returns the number of characters printed (excluding the null byte used to end ou
 .BR "	_printf("I am %d years old", age); "
 .br
 .BR "	_printf("you are %i years", age); "
+.br
+.BR "   _printf("%R", p); "
+.br
+.BR "   _printf("%r", p); "
 .br
 .BR " }"
 .br
