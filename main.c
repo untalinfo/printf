@@ -19,6 +19,7 @@ int main(void)
 //	_printf("%s");
 	_printf("%i\n", -324354);
 	_printf("%d\n", 1232435);
+	_printf("%R", "Guvf fragrapr vf ergevrirq sebz in_netf!\n");
 	return (0);
 //	len = _printf("L\n");
 /**	len2 = printf("Let's try to printf a simple sentence.\n");
