@@ -98,27 +98,12 @@ int p_rot13(va_list list)
 	int i, j;
 	char *s = va_arg(list, char *);
 
-	char alpha[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-	char replace[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+	char alpha[] = "\n!_ aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char replace[] = "\n!_ nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == ' ')
-		{
-			len = len + _putchar(' ');
-			continue;
-		}
-		if (s[i] == '_')
-		{
-			len = len + _putchar('_');
-			continue;
-		}
-		if (s[i] == '!')
-		{
-		len = len + _puts("!\n");
-		break;
-		}
-		for (j = 0; j <= 52; j++)
+		for (j = 0; j <= 55; j++)
 		{
 			if (s[i] == alpha[j])
 			{
